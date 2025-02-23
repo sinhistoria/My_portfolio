@@ -11043,15 +11043,18 @@ header.masthead .masthead-heading {
 
 @media (max-width: 576px){
   header.masthead .masthead-heading {
-    font-size: 6rem;
+    font-weight: 700;
     line-height: 2rem;
+    width: 80%;
   }
   .masthead .container .start{
     top: -17px;
     flex-direction: column;
+
   }
   .masthead .container .start img{
-    width: 200px;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.2);
   }
 }
 
