@@ -11038,19 +11038,20 @@ header.masthead .masthead-heading {
     font-weight: 700;
     line-height: 4.5rem;
     margin-bottom: 4rem;
-  }
+  } 
 }
 
 @media (max-width: 480px){
   header.masthead .masthead-heading {
     font-size: 6rem;
-    font-weight: 700;
-  } 
+    line-height: 2rem;
+  }
   .masthead .container .start{
     top: -11px;
+    flex-direction: column;
   }
   .masthead .container .start img{
-    margin-bottom:60px;
+    width: 200px;
   }
 }
 
