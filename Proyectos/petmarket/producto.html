@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Market</title>
+    <link rel="shortcut icon" href="huella.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main" class="contenedor">
+        <header id="head">
+            <img src="imagenes/Pet Market4.png" alt="Pet Market" >
+        </header>
+
+        <menu id="menu">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#">Productos</a>
+                        <ul class="submenu">
+                            <li><a href="paraperros.html">Para Perros</a></li>
+                            <li><a href="paragatos.html">Para Gatos</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="comida.html">Comida</a></li>
+                    <li><a href="juguetes.html">Juguetes</a></li>
+                    <li><a href="contacto.html">Contáctanos</a></li>
+                </ul>
+            </nav>
+        </menu>
+        
+        <input type="text" id="valor" value="0" hidden="true">
+
+        <br>
+
+        <div class="contenido_producto">
+
+            <table>
+                <tr>
+                    <td class="imagen" id="imagen_producto">
+                        <img src="Productos/1.png" alt="1">
+                    </td>
+                    <td class="informacion"> 
+                        <h3 id="Titulo_producto">Affinity Advance 18 kg</h3>
+                        <p>
+                            <p id="Ficha_producto">
+                                ADVANCE es una gama de alimentos de alta calidad que incorpora los últimos avances en nutrición para favorecer que tu mascota goce de una excelente salud durante toda su vida. ADVANCE está especialmente formulado para ayudar a que tu perro esté en excelentes condiciones físicas, internas y externas. ADVANCE contribuye al óptimo funcionamiento de los distintos sistemas de tu perro: inmunitario, digestivo, cardiovascular, urinario.
+                                Advance incorpora en todas sus fórmulas una efectiva combinación de antioxidantes tales como vitamina C y E, bioflavonoides, selenio, zinc, cobre, manganeso y taurina
+                            </p>
+                        </p>
+                        <p>
+                            
+                            <p><strong>Especial para:</strong> <label id="para">Perros</label></p>
+                        </p>
+                        <p>
+                            <p><strong>Precio:</strong> $<label id="precio">15.000</label></p>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <input type="button" value="Comprar" class="btn" onclick="comprar()">
+
+        <br><br>
+
+        <br> <br> <br>
+
+        <footer id="footer">
+            <p class="footer_enlaces" >                
+                <a href="nosotros.html" class="fuente_pie">Nosotros</a> - 
+                <a href="politicadeprivacidad.html" class="fuente_pie">Política de Privacidad</a> - 
+                <a href="avisolegal.html" class="fuente_pie">Aviso Legal</a>
+            </p>
+            <p>© 2021  Pet Market - Todos Los Derechos Reservados</p>          
+        </footer>
+    </div>
+
+    <script src="petmarket.js" defer></script>
+</body>
+</html>

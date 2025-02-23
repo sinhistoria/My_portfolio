@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box; 
+}
+
+
+body
+{
+    background:url(imagenes/fondo2.png);
+    background-color: #F2F3F4;
+}
+
+header
+{
+    width: 100%;
+    height: 50%;
+    margin: auto;
+    margin-top: 5px;
+}
+
+header img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+
+.contenedor
+{
+    min-height: 500px;
+    width: 85%;
+    margin: auto;
+    background-color: white;
+    border-radius: 25px;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+menu
+{
+    background-color: #ffffff;
+    border-radius:20px;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+menu nav
+{
+    max-width: 1000px;
+    list-style:none;
+    width:85%;
+    margin:0px auto ;
+    position:relative;
+    -moz-border-radius:20px;
+    -webkit-border-radius:20px;
+    border-radius:20px;
+    background: #013953;
+    background:-moz-linear-gradient(top,#0272a7,#013953);
+    background:-webkit-gradient(linear,0% 0%,0% 100%,from(#0272a7),to(#013953));   
+}
+
+menu nav ul
+{
+    list-style: none;
+}
+
+menu nav ul li
+{
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+menu nav ul li a
+{
+    color: #ffffff;
+    padding: 20px;
+    display:block;
+    text-decoration:none;
+    font-family: Arial;
+}
+
+menu nav ul li a:hover
+{
+    background: #0692d3;
+    border-radius:20px;
+}
+
+.destacar
+{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top:50px;
+}
+
+table
+{
+    width:90%;
+    padding: 20px;
+    margin: auto;
+    text-align:center;
+    border: 2px solid #0692d3; 
+    border-radius:25px;
+}
+
+table tr td
+{
+    padding:20px;
+}
+
+table tr td img
+{
+    width: 200px;
+    height: 200px;
+}
+
+table tr td a
+{
+    text-decoration: none;
+    color: black;
+}
+
+table tr td a:hover
+{
+    text-decoration: none;
+    color: #0272a7;
+    cursor: pointer;
+}
+
+table tr td a:hover label
+{
+    text-decoration: none;
+    color: #0272a7;
+    cursor: pointer;
+}
+
+.texto
+{
+    font-size: 15px;
+    font-family: Arial;
+    text-align: center;
+}
+
+.productos
+{
+    margin: auto;
+    width: 90%;
+    text-align: center;
+}
+
+.productos img
+{
+    width: 40%;
+    height: 50%;
+    border-radius:25px;
+    padding-bottom: 15px;
+}
+
+.productos img:hover
+{
+    cursor: pointer;
+}
+
+footer
+{
+    background-color: #CDCDCD;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    font-family: Arial;
+    font-size: 15px;
+}
+
+.footer_enlaces a
+{
+    color: black;
+}
+
+.footer_enlaces a:hover
+{
+    color: #026897;
+}
+
+.conocenos
+{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.conocenos img
+{
+    width:85%;
+    margin: auto;
+}
+
+.contacto
+{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.contacto img
+{
+    width:85%;
+    margin: auto;
+    border-radius:25px;
+}
+
+.privacidad
+{
+    width: 90%;
+    margin: auto;
+    font-family: Arial;
+    text-align: justify;
+    font-size: 17px;
+}
+
+.privacidad h3
+{
+    text-align: center;
+    color: #0272a7;
+}
+
+.imagen
+{
+    margin: auto;
+    width: 50%;
+}
+
+.imagen img
+{
+    width: 300px;
+    height: 300px;
+}
+
+.informacion
+{
+    font-family: Arial;
+    width: 50%;
+}
+
+.informacion h3
+{
+    color: #0272a7;
+    padding-bottom: 20px;
+}
+
+.informacion p
+{
+    text-align: justify;
+    padding: 5px;
+}
+
+.informacion strong
+{
+    color: #0272a7;
+    text-align: left;
+}
+
+.contenido_producto
+{
+    padding-bottom: 20px;
+}
+
+.btn
+{
+        display: block;
+        margin-top: 50px;
+        padding:5px;
+        color: #ffffff;
+        text-decoration:none;
+        font-family: Arial;
+        font-size:20px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing:border-box;
+        box-sizing:border-box;
+        margin:0 auto 0;
+        background: #013953;
+        position:relative;
+        -moz-border-radius:20px;
+        -webkit-border-radius:20px;
+        border-radius:20px;
+        background:-moz-linear-gradient(top,#0272a7,#013953);
+        background:-webkit-gradient(linear,0% 0%,0% 100%,from(#0272a7),to(#013953));
+}
+
+.btn:hover
+{
+        display: block;
+        margin-top: 50px;
+        cursor: pointer;
+        padding:5px;
+        color: #ffffff;
+        text-decoration:none;
+        font-family: Arial;
+        font-size:25px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing:border-box;
+        box-sizing:border-box;
+        margin:0 auto 0;
+        background: #013953;
+        position:relative;
+        -moz-border-radius:20px;
+        -webkit-border-radius:20px;
+        border-radius:20px;
+        background:-moz-linear-gradient(top,#0391d3,#016594);
+        background:-webkit-gradient(linear,0% 0%,0% 100%,from(#0391d3),to(#016594));
+}
+
+.submenu
+{
+    display: none;
+    position: absolute;
+    background: #013953;
+    background:-moz-linear-gradient(top,#0272a7,#013953);
+    background:-webkit-gradient(linear,0% 0%,0% 100%,from(#0272a7),to(#013953));  
+	width: 150%;
+	z-index:1000;
+}
+
+menu nav ul li:hover .submenu
+{
+    display: block;
+    border-radius: 20px;
+}
+
+h1
+{
+    text-align: center;
+    font-family:Arial;
+    color: #005f8b;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+fieldset
+{
+    width:70%;
+    margin: auto;
+    border-radius:25px;
+    text-align: left;
+    font-family: Arial;
+    border-color: #0692d3;
+}
+
+fieldset p
+{
+    padding: 10px;
+}
+
+fieldset legend
+{
+    font-weight:bold;
+}
+
+.comprar_producto
+{
+    border: none;
+}

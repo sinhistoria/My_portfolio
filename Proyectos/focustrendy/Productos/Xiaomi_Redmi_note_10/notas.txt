@@ -1,0 +1,7 @@
+
+<br><span class="stock">EN STOCK</span> <br><br>
+<label for="quantitySelect" class="cantidad">Cantidad: </label>
+
+class="cantidad selector"
+
+<h3 style="color: green; font-weight: bold;">¡¡¡Gracias por confiar en nosotros, pronto nos pondremos en contacto contigo para el envío!!!</h3>

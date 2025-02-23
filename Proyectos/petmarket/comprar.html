@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Market</title>
+    <link rel="shortcut icon" href="huella.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main" class="contenedor">
+        <header id="head">
+            <img src="imagenes/Pet Market4.png" alt="Pet Market" >
+        </header>
+
+        <menu id="menu">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#">Productos</a>
+                        <ul class="submenu">
+                            <li><a href="paraperros.html">Para Perros</a></li>
+                            <li><a href="paragatos.html">Para Gatos</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="comida.html">Comida</a></li>
+                    <li><a href="juguetes.html">Juguetes</a></li>
+                    <li><a href="contacto.html">Contáctanos</a></li>
+                </ul>
+            </nav>
+        </menu>
+        
+        <input type="text" id="valor" value="1" hidden="true">
+        <h1>Comprar</h1>
+
+        <div id="destacados" class="destacar">
+
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <p><strong id="nombre">Nombre:</strong> Pocoyo Ramirez</p>
+                <p><strong>Dirección:</strong> Calle del Infinito 500</p>
+                <p><strong>Telefono:</strong> 310777777</p>
+                <p><strong>Correo Electrónico:</strong> noestoy@gmail.com</p>
+            </fieldset>
+            <br><br>
+            <fieldset>
+                <legend>Datos Bancarios</legend>
+                <p><strong>Numero de Tarjeta:</strong> ***********4678</p>
+                <p><strong>Fecha de Caducidad:</strong> 05/27</p>
+                <p><strong>CVV:</strong> ***</p>
+            </fieldset>
+            <br><br>
+            <fieldset>
+                <legend>Producto</legend>
+                <p >
+
+                    <table class="comprar_producto">
+                        <tr>
+                            <td id="imagen_comprar"><img src="Productos/1.png" alt="1"></td>
+                            <td><strong id="titulo_comprar">TITulo</strong><br>
+                                $<label for="" id="precio_comprar">precio</label></td>
+                        </tr>
+                    </table>
+                </p>
+            </fieldset>
+
+        </div>
+        <br>
+        <input type="button" value="Pagar" class="btn" onclick="pagar()">
+
+        <br>
+
+
+        <footer id="footer">
+            <p class="footer_enlaces" >                
+                <a href="nosotros.html" class="fuente_pie">Nosotros</a> - 
+                <a href="politicadeprivacidad.html" class="fuente_pie">Política de Privacidad</a> - 
+                <a href="avisolegal.html" class="fuente_pie">Aviso Legal</a>
+            </p>
+            <p>© 2021  Pet Market - Todos Los Derechos Reservados</p>          
+        </footer>
+    </div>
+    <script src="petmarket.js" defer></script>
+</body>
+</html>
