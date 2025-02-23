@@ -1,3 +1,3 @@
 deployment:
   tasks:
-    - cp -R * /home/shamhcbr/public_html/proof # Copy all files to the destination directory
+    - rsync -av --delete --exclude='.git' ./ /home/shamhcbr/public_html/proof/
