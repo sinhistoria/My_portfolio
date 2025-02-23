@@ -11041,13 +11041,13 @@ header.masthead .masthead-heading {
   } 
 }
 
-@media (max-width: 480px){
+@media (max-width: 576px){
   header.masthead .masthead-heading {
     font-size: 6rem;
     line-height: 2rem;
   }
   .masthead .container .start{
-    top: -11px;
+    top: -17px;
     flex-direction: column;
   }
   .masthead .container .start img{
