@@ -10999,7 +10999,7 @@ header.masthead .masthead-heading {
   top: -50px;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 992px){
   header.masthead {
     padding-top: 17rem;
     padding-bottom: 12.5rem;
@@ -11011,12 +11011,50 @@ header.masthead .masthead-heading {
     margin-bottom: 2rem;
   }
   header.masthead .masthead-heading {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 4rem;
+  }
+  .masthead .container .start img{
+    bottom: 100px;
+  }
+  .masthead .container .start{
+    top: -10px;
+  }
+}
+
+@media (min-width: 768px) {
+  header.masthead {
+    padding-top: 17rem;
+    padding-bottom: 12.5rem;
+  }
+  header.masthead .masthead-subheading {
+    font-size: 2.25rem;
+    font-style: italic;
+    margin-bottom: 2rem;
+  }
+  header.masthead .masthead-heading {
     font-size: 4.5rem;
     font-weight: 700;
     line-height: 4.5rem;
     margin-bottom: 4rem;
   }
 }
+
+@media (max-width: 480px){
+  header.masthead .masthead-heading {
+    font-size: 6rem;
+    font-weight: 700;
+  } 
+  .masthead .container .start{
+    top: -11px;
+  }
+  .masthead .container .start img{
+    margin-bottom:60px;
+  }
+}
+
+
 #portfolio .portfolio-item {
   max-width: 26rem;
   margin-left: auto;
