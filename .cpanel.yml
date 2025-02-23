@@ -1,3 +1,5 @@
+---
 deployment:
   tasks:
-    - rsync -av --delete --exclude='.git' ./ /home/shamhcbr/public_html/proof/
+    - export DEPLOYPATH=/home/shamhcbr/public_html/proof/
+    - /bin/cp -R * $DEPLOYPATH
