@@ -79,7 +79,7 @@ menu nav ul li
     margin-right: 10px;
     margin-left: 10px;
 }
-
+ 
 menu nav ul li a
 {
     color: #ffffff;
@@ -276,47 +276,47 @@ footer
 
 .btn
 {
-        display: block;
-        margin-top: 50px;
-        padding:5px;
-        color: #ffffff;
-        text-decoration:none;
-        font-family: Arial;
-        font-size:20px;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing:border-box;
-        box-sizing:border-box;
-        margin:0 auto 0;
-        background: #013953;
-        position:relative;
-        -moz-border-radius:20px;
-        -webkit-border-radius:20px;
-        border-radius:20px;
-        background:-moz-linear-gradient(top,#0272a7,#013953);
-        background:-webkit-gradient(linear,0% 0%,0% 100%,from(#0272a7),to(#013953));
+    display: block;
+    margin-top: 50px;
+    padding:5px;
+    color: #ffffff;
+    text-decoration:none;
+    font-family: Arial;
+    font-size:20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    margin:0 auto 0;
+    background: #013953;
+    position:relative;
+    -moz-border-radius:20px;
+    -webkit-border-radius:20px;
+    border-radius:20px;
+    background:-moz-linear-gradient(top,#0272a7,#013953);
+    background:-webkit-gradient(linear,0% 0%,0% 100%,from(#0272a7),to(#013953));
 }
 
 .btn:hover
 {
-        display: block;
-        margin-top: 50px;
-        cursor: pointer;
-        padding:5px;
-        color: #ffffff;
-        text-decoration:none;
-        font-family: Arial;
-        font-size:25px;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing:border-box;
-        box-sizing:border-box;
-        margin:0 auto 0;
-        background: #013953;
-        position:relative;
-        -moz-border-radius:20px;
-        -webkit-border-radius:20px;
-        border-radius:20px;
-        background:-moz-linear-gradient(top,#0391d3,#016594);
-        background:-webkit-gradient(linear,0% 0%,0% 100%,from(#0391d3),to(#016594));
+    display: block;
+    margin-top: 50px;
+    cursor: pointer;
+    padding:5px;
+    color: #ffffff;
+    text-decoration:none;
+    font-family: Arial;
+    font-size:25px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    margin:0 auto 0;
+    background: #013953;
+    position:relative;
+    -moz-border-radius:20px;
+    -webkit-border-radius:20px;
+    border-radius:20px;
+    background:-moz-linear-gradient(top,#0391d3,#016594);
+    background:-webkit-gradient(linear,0% 0%,0% 100%,from(#0391d3),to(#016594));
 }
 
 .submenu
@@ -368,4 +368,70 @@ fieldset legend
 .comprar_producto
 {
     border: none;
+}
+
+/* Tabla dentro de index.html en responsive design */
+@media screen and (max-width: 992px) {
+    table {
+        width: 100%;
+    }
+
+    table tr {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    table tr td {
+        width: 45%; /* Reduce el ancho para que solo entren dos por fila */
+        padding: 10px;
+    }
+
+    table tr td img {
+        width: 100px; /* Reduce el tamaño de las imágenes */
+        height: auto;
+    }
+
+}
+
+
+/* Tabla dentro de Producto.html en responsive design */
+@media (max-width: 992px) {
+    .contenido_producto table {
+        width: 80%; /* Ajusta el ancho de la tabla al 80% del contenedor */
+        display: flex;
+        flex-direction: column; /* Cambia la dirección de la tabla a vertical */
+    }
+
+    .contenido_producto table tr {
+        display: flex;
+        flex-direction: column; /* Cambia la dirección de la fila a vertical */
+    }
+
+    .contenido_producto table td {
+        width: 100%; /* Hace que cada celda ocupe el 100% del ancho */
+        text-align: center; /* Centra el contenido de las celdas */
+    }
+
+    .contenido_producto table td.imagen {
+        order: 1; /* Coloca la imagen primero */
+    }
+
+    .contenido_producto table td.informacion {
+        order: 2; /* Coloca la información después de la imagen */
+    }
+
+    .contenido_producto table td img {
+        width: 80%; /* Reduce el tamaño de la imagen */
+        height: auto; /* Mantiene la proporción de la imagen */
+        margin: 0 auto; /* Centra la imagen horizontalmente */
+    }
+
+    .contenido_producto table td.informacion h3 {
+        font-size: 20px; /* Ajusta el tamaño del título */
+    }
+
+    .contenido_producto table td.informacion p {
+        font-size: 15px; /* Ajusta el tamaño del texto de la descripción */
+    }
 }
