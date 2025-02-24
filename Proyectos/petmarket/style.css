@@ -50,9 +50,10 @@ menu
     width: 80%;
     margin: auto;
     padding-bottom: 50px;
+    position: relative;
 }
 
-menu nav
+menu nav, menu button
 {
     max-width: 1000px;
     list-style:none;
@@ -64,12 +65,16 @@ menu nav
     border-radius:20px;
     background: #013953;
     background:-moz-linear-gradient(top,#0272a7,#013953);
-    background:-webkit-gradient(linear,0% 0%,0% 100%,from(#0272a7),to(#013953));   
+    background:-webkit-gradient(linear,0% 0%,0% 100%,from(#0272a7),to(#013953));    
+    background: linear-gradient(to bottom, #0272a7, #013953);
 }
 
 menu nav ul
 {
     list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
 menu nav ul li
@@ -325,7 +330,8 @@ footer
     position: absolute;
     background: #013953;
     background:-moz-linear-gradient(top,#0272a7,#013953);
-    background:-webkit-gradient(linear,0% 0%,0% 100%,from(#0272a7),to(#013953));  
+    background:-webkit-gradient(linear,0% 0%,0% 100%,from(#0272a7),to(#013953)); 
+    background: linear-gradient(to bottom, #0272a7, #013953); 
 	width: 150%;
 	z-index:1000;
 }
@@ -369,6 +375,89 @@ fieldset legend
 {
     border: none;
 }
+
+
+/* Diseño del botón de menú hamburguesa */
+.menu-toggle {
+    display: none; /* Oculto en escritorio */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border-radius:20px;
+}
+
+
+/*Responsive Design para el menu*/
+@media (max-width: 992px) {
+
+    .menu-toggle {
+        display: block; /* Se muestra en móviles */
+    }
+
+    #nav-menu {
+        display: none; /* Oculto por defecto */
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 60px;
+        z-index: 1000;
+    }
+
+    #menu{
+        margin-bottom: 15px;
+    }
+
+    #menu nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #nav-menu.active {
+        display: flex; /* Se muestra cuando tiene la clase 'active' */
+    }
+
+    /* Muestra el menú cuando está activo */
+    nav.active {
+        display: block;
+    }
+
+    /* Cambia la disposición del menú a vertical */
+    nav ul li {
+        display: block;
+        margin: 0;
+        width: 100%;
+    }
+
+    nav ul li a {
+        padding: 15px;
+        text-align: center;
+        width: 100%;
+    }
+
+    /* Submenú en móviles */
+    .submenu {
+        position: static;
+        width: 100%;
+    }
+
+    nav ul li:hover .submenu {
+        display: none; /* Oculta el submenú al hacer hover en móviles */
+    }
+
+    /* Muestra el submenú al hacer clic */
+    nav ul li:focus-within .submenu,
+    nav ul li:active .submenu {
+        display: block;
+    }
+}
+
 
 /* Tabla dentro de index.html en responsive design */
 @media screen and (max-width: 992px) {

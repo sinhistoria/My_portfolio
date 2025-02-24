@@ -58,3 +58,17 @@ function pagar()
 {
     alert('Gracias por comprar con nosotros. \n Le hemos enviado toda la información a su correo electrónico.');
 }
+
+function toggleMenu() {
+    const navMenu = document.getElementById("nav-menu");
+    navMenu.classList.toggle("active");
+}
+
+document.addEventListener("click", (event) => {
+    const navMenu = document.getElementById("nav-menu");
+    const menuIcon = document.getElementById("menu-icon");
+
+    if (!navMenu.contains(event.target) && !menuIcon.contains(event.target)) {
+        navMenu.classList.remove("active");
+    }
+});
