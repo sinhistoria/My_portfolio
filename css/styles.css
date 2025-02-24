@@ -10983,6 +10983,7 @@ header.masthead .masthead-heading {
   width: 50%;
 }
 
+
 .masthead .container .start img{
   flex: 1;
   max-width: 35vw;
@@ -11036,25 +11037,52 @@ header.masthead .masthead-heading {
   header.masthead .masthead-heading {
     font-size: 4.5rem;
     font-weight: 700;
-    line-height: 4.5rem;
+    line-height: 7rem;
     margin-bottom: 4rem;
-  } 
+  } header.masthead .masthead-heading h2{
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media (max-width: 767px){
+  header.masthead .masthead-heading h2{
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 576px){
   header.masthead .masthead-heading {
     font-weight: 700;
-    line-height: 2rem;
+    font-size: 10px;
+    line-height: 2.3rem;
     width: 80%;
   }
+
+  header.masthead .masthead-heading h2{
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+  }
+
   .masthead .container .start{
-    top: -17px;
+    top: -35px;
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
 
   }
   .masthead .container .start img{
-    width: 80%;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.3);
+    flex: 1;
+    max-width: 45vw;
+    max-height: 45vw;
+    width: auto;
+    height: auto;
   }
 }
 
