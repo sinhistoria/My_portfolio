@@ -10949,7 +10949,7 @@ header.masthead {
   padding-top: 10.5rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/programer2.jpg");  
+  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,.4)), url("../assets/img/programer2.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -11074,7 +11074,7 @@ header.masthead .masthead-heading {
   }
 
   .masthead .container .start{
-    top: -35px;
+    top: -45px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11084,7 +11084,6 @@ header.masthead .masthead-heading {
 
   }
   .masthead .container .start img{
-    background-color: rgba(0, 0, 0, 0.3);
     flex: 1;
     max-width: 45vw;
     max-height: 45vw;
