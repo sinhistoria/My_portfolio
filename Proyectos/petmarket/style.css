@@ -460,7 +460,7 @@ fieldset legend
 
 
 /* Tabla dentro de index.html en responsive design */
-@media screen and (max-width: 992px) {
+@media (max-width: 992px) {
     table {
         width: 100%;
     }
