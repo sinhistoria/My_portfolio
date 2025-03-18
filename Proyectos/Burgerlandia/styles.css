@@ -1,0 +1,267 @@
+/* Variables de color y estilos base */
+:root {
+    --rojo: #a9232b;
+    --naranja: #fb8b07;
+    --beige: #eed39b;
+    --oscuro: #1A1423;
+}
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background: var(--beige);
+    color: var(--oscuro);
+    line-height: 1.6;
+}
+
+/* 🎪 Banner Principal */
+.hero {
+    position: relative;
+    padding: 2rem 1rem;
+    background-image: url('Images/banner2.jpg');
+    background-size: cover;
+    background-position: top;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    height: 20vw;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: clamp(2rem, 6vw, 3rem);
+    font-weight: 750;
+    animation: float 3s ease-in-out infinite;
+    text-align: center;
+    margin-top: 8px;
+    color: var(--rojo);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    font-weight: 700;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Hacer flotar un titulo*/
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* 🍔 Sección de Hamburguesas */
+.burgers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.burger-card {
+    background: white;
+    border-radius: 15px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.burger-card:hover {
+    transform: translateY(-5px);
+}
+
+.burger-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.burger-card img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* 🗺️ Mapa y Horarios */
+.location-section {
+    padding: 2rem 1rem;
+    max-width: 100%; 
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow-x: hidden;
+}
+
+.location-section p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.map-wrapper {
+    height: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin: 2rem;
+}
+
+.map-wrapper iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.schedule {
+    box-shadow: 1px 1px 4px 6px rgba(0,0,0,0.1);
+    padding: 2rem;
+    border-radius: 15px;
+    margin: 2rem;
+    text-align: center;
+}
+
+/* 📸 Galería */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    aspect-ratio: 1;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+/* 🎥 Estilos para el modal de imagen */
+.image-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: scale(0.80); /* Efecto de zoom inicial */
+    transition: opacity 0.3s ease, transform 0.4s ease;
+}
+
+.image-modal.show {
+    display: flex;
+    opacity: 1;
+    transform: scale(1); /* Zoom suave */
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+}
+
+.close-modal {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--rojo);
+    padding: 1rem;
+}
+
+/* 📜 Footer */
+.footer {
+    background-color: var(--oscuro);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+
+.footer a {
+    color: var(--naranja);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* 🎨 Elementos Responsive */
+@media (max-width: 768px) {
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .map-wrapper {
+        width: 100%;
+        margin: 5px auto;
+    }
+    .schedule {
+        width: 100%;
+        margin: 5px auto;
+    }
+    .location-section {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+}
